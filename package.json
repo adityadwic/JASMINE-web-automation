@@ -1,0 +1,39 @@
+{
+  "name": "jasmine-web-automation",
+  "version": "1.0.0",
+  "description": "Comprehensive automation script for user registration and deletion flow on automationexercise.com using Jasmine, Protractor, and POM best practices.",
+  "main": "protractor.conf.js",
+  "scripts": {
+    "test": "protractor protractor.conf.js",
+    "test:headless": "protractor protractor.conf.js --params.headless=true",
+    "test:report": "npm test && npm run generate:report",
+    "webdriver:update": "webdriver-manager update",
+    "webdriver:start": "webdriver-manager start",
+    "setup": "npm run webdriver:update",
+    "generate:report": "node scripts/generateReport.js",
+    "serve:report": "cd reports/html && python3 -m http.server 8080",
+    "allure:serve": "allure serve reports/allure-results",
+    "allure:generate": "allure generate reports/allure-results -o reports/allure-report --clean"
+  },
+  "keywords": [
+    "automation",
+    "testing",
+    "jasmine",
+    "protractor",
+    "page-object-model",
+    "e2e",
+    "selenium",
+    "webdriver"
+  ],
+  "author": "Aditya Dwi Cahyono",
+  "devDependencies": {
+    "chromedriver": "^140.0.0",
+    "jasmine": "^4.0.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "protractor": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
