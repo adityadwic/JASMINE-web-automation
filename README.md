@@ -119,6 +119,8 @@ npm run serve:report
 
 ## 📊 Test Reports
 
+<img width="1439" height="846" alt="jasmine-test-report" src="https://github.com/user-attachments/assets/bb555332-8e4f-432e-a9bb-f2aad94afcb2" />
+
 The framework generates comprehensive test reports including:
 - **Modern Interactive Dashboard** - Visual analytics with charts and graphs
 - **Detailed HTML Reports** - Complete test results with screenshots
